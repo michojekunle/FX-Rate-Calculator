@@ -1,0 +1,93 @@
+/* general styles  */
+
+:root {
+    --primary-color:#01b92;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    padding: 1.2rem;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+small {
+    color: #768170;
+    font-size: 0.8rem;
+}
+
+small span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+p {
+    margin-top: .5rem;
+    text-align: center;
+    color: #768170;
+}
+
+#swap {
+    cursor: pointer;
+    position: relative;
+    left: 1rem;
+}
+
+.currency {
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+select {
+    padding: .8em 1.6em .8em .8em;
+    cursor: pointer;
+    border: 1px solid #dedede;
+    appearance: none;
+    -moz-appearance:none;
+    border-radius: .5em;
+    font-size: 1em;
+}
+
+.currency input {
+    border: 0;
+    background: transparent;
+    font-size: 2em;
+    text-align: right;
+}
+
+.currency input:in-range{
+    border-right: 2px solid green;
+}
+
+.currency input:out-of-range{
+    border-right: 2px solid red;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rate.rate {
+    color: var(--primary-color);
+    font-size: 16px;
+    padding: 0 .8em;
+}
+
+select:focus, input:focus {
+    outline: 0;
+}
