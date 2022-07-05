@@ -59,6 +59,7 @@ select {
     -moz-appearance:none;
     border-radius: .5em;
     font-size: 1em;
+    margin-right: 8px;
 }
 
 .currency input {
@@ -66,20 +67,30 @@ select {
     background: transparent;
     font-size: 2em;
     text-align: right;
+    border-radius: 8px;
+    appearance: none;
 }
 
 .currency input:in-range{
-    border-right: 2px solid green;
+    border: 2px solid green;
 }
 
 .currency input:out-of-range{
-    border-right: 2px solid red;
+    border: 2px solid red;
 }
 
 .swap-rate-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#swap {
+    transition: .5s;
+}
+
+#swap.rotate {
+    transform: rotate(180deg);
 }
 
 #rate.rate {
